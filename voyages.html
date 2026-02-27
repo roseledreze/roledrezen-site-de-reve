@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Mes Voyages et mes Rêves</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+            background: url('fond_voyage.png') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        #contenu-voyage {
+            background-color: rgba(255, 255, 255, 0.92);
+            width: 85%;
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+
+        .cadre-info {
+            background-color: #fff0f5; 
+            border-left: 6px solid #FF69B4;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        h1 { color: #004d98; border-bottom: 3px solid #a50044; display: inline-block; padding-bottom: 5px; }
+        h2 { color: #a50044; margin-top: 0; }
+        
+        .lien-wiki {
+            color: #004d98;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .audio-player {
+            margin: 20px 0;
+            padding: 10px;
+            background: #f1f1f1;
+            border-radius: 50px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="entete-de-page"> <p>Mes Destinations de Rêve</p> </div>
+
+    <table id="bloc-menu">
+        <tr>
+            <th><a href="index.html">Accueil</a></th>
+            <th><a href="productions.html">Productions</a></th>
+            <th><a href="passions.html">Passions</a></th>
+            <th><a href="videos.html">Vidéos</a></th>
+            <th><a href="site.html">Mon site de rêve</a></th>
+        </tr>
+    </table>
+
+    <div id="contenu-voyage">
+        
+        <div class="audio-player">
+            <span>✈️ <strong>Ambiance Voyage :</strong></span>
+            <audio controls loop>
+                <source src="ton_fichier_avion.mp3" type="audio/mpeg">
+                Ton navigateur ne supporte pas l'audio.
+            </audio>
+        </div>
+
+        <h1>Mon projet : Vivre en Espagne 🇪🇸</h1>
+        <div class="cadre-info">
+            <p>
+                Mon plus grand rêve est de déménager en Espagne. Toute ma famille y a vécu, 
+                ce qui me lie à ce pays. J'adore la culture espagnole, 
+                le mode de vie et, bien sûr, l'ambiance qui y règne.
+            </p>
+            <p>🔗 <a class="lien-wiki" href="https://fr.wikipedia.org/wiki/Espagne" target="_blank">En savoir plus sur l'Espagne</a></p>
+        </div>
+
+        <h1>Mes Destinations de Rêve</h1>
+
+        <div class="cadre-info">
+            <h2>🇵🇷 Porto Rico</h2>
+            <p>
+                Je rêve de visiter Porto Rico ! Étant une immense fan de reggaeton  
+                ce style musicale m'a beaucoup influencée et me donne envie de découvrir l'île 
+                où ce genre est né. Entre la musique et les paysages, c'est une destination de rêvéé pour moi.
+            </p>
+            <p>🔗 <a class="lien-wiki" href="https://fr.wikipedia.org/wiki/Porto_Rico" target="_blank">Découvrir Porto Rico</a></p>
+        </div>
+
+        <div class="cadre-info">
+            <h2>🇦🇷 Buenos Aires, Argentine</h2>
+            <p>
+                L'Argentine m'attire énormément pour son lien avec le football et l'énergie de sa capitale.
+            </p>
+            <p>🔗 <a class="lien-wiki" href="https://fr.wikipedia.org/wiki/Argentine" target="_blank">Explorer l'Argentine</a></p>
+        </div>
+
+        <div class="cadre-info">
+            <h2>🇧🇷 Rio de Janeiro, Brésil</h2>
+            <p>
+                Le Brésil reste un rêve pour ses monuments iconiques comme le Christ Rédempteur et ses plages célèbres.
+            </p>
+            <p>🔗 <a class="lien-wiki" href="https://fr.wikipedia.org/wiki/Br%C3%A9sil" target="_blank">Visiter le Brésil</a></p>
+        </div>
+
+        <br>
+        <a href="site.html" style="font-weight:bold; color:#a50044; text-decoration:none;">← Retour à la page d'accueil</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+ iframe {
+	
+height:70vh;
+width:70%;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #FFFAFA; 
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+}
+
+.presentation {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.presentation img {
+  width: 120px;   /* plus fiable que % ici */
+  height: auto;
+}
+
+.texte-presentation {
+  flex: 1;
+  color:#D02090;
+}
+th { width: 500px;}
+
+
+
+#entete-de-page {
+	padding: 5px;
+	height: 100px;
+	background-color:#FFB6C1;
+	font-size: 32px;
+	font-weight: bold;
+	font-variant: small-caps;
+	text-align: center;
+	color: #FFFFFF;
+}
+#bloc-menu {
+	height: 36px;
+	background-color:#FFC1CC;
+	float: center;
+	color: white;
+}
+#contenu {
+	padding: 10px;
+	background-color:  #FFFFFF;
+	color:#D02090;
+}
+#infos {
+	color: #D02090;
+	font-style: italic;
+}
+#pied-de-page {
+	padding: 5px;
+	background-color: #FFB6C1;
+	font-size: 11px;
+	 color: #FFFFFF;
+}
+
+.bouton.active {
+Color:#FF69B4;
+}	
+
+.bouton {
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 400;
+	color: #FFB6C1;
+	font-size: 4rem;
+	line-height: 2em;
+	margin: 0 20px; /* espace entre les boutons */
+}
+
+/*mettre une image aux bords arrondis*/
+
+.arrondie {
+-moz-border-radius:7px;
+-webkit-border-radius:7px;
+border-radius:7px;
+}
+
+.arrondie1 {
+-moz-border-radius:100px;
+-webkit-border-radius:100px;
+border-radius:100px;
+}
+
+a:link {
+  color:#D02090;
+  text-decoration: none;
+}
+
+a:visited {
+  color:   #A020F0;
+  text-decoration: none;
+}
+
+
+a:hover {
+ color: #FFFFFF;
+ text-decoration: none;
+ 
+}
+
+a:active {
+    color: #FF69B4;
+	 text-decoration: none;
+}

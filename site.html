@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Mon Site de Rêve</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /* Ce code s'applique uniquement à cette page */
+        .gros-titre-barca {
+            font-size: 50px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .bleu { color: #004d98; }
+        .rouge { color: #a50044; }
+
+        .image-cliquable {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 15px;
+            border: 3px solid #FFC1CC;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .image-cliquable:hover {
+            transform: scale(1.05); /* L'image grossit un peu au survol */
+            box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .container-reves {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin-top: 40px;
+        }
+
+        .bloc-reve {
+            width: 45%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="entete-de-page"> <p>Mon Site de Rêve</p> </div>
+    
+    <table id="bloc-menu">
+        <tr>
+            <th><a href="index.html">Accueil</a></th>
+            <th><a href="productions.html">Productions</a></th>
+            <th><a href="passions.html">Passions</a></th>
+            <th><a href="videos.html">Vidéos</a></th>
+            <th><a href="site.html">Mon site de rêve</a></th>
+        </tr>
+    </table>
+
+    <div id="contenu">
+        <h1 style="text-align:center;">Bienvenue sur mon projet personnel</h1>
+        <p style="text-align:center;">Voici les deux thèmes qui me tiennent à cœur :</p>
+
+        <div class="container-reves">
+            <div class="bloc-reve">
+                <span class="gros-titre-barca">
+                    <span class="bleu">BAR</span><span class="rouge">ÇA</span>
+                </span>
+                <p>Le club de toute ma famille.</p>
+                <a href="fcbarcelone.html">
+                    <img src="barca_vivant.png" alt="Page Barça" class="image-cliquable">
+                </a>
+                <br><br>
+                <a href="fcbarcelone.html" style="color:#FF69B4; font-weight:bold;">Voir la page Barça</a>
+            </div>
+
+            <div class="bloc-reve">
+                <h3 style="font-size: 35px; color: #FF69B4; margin-bottom: 25px;">Mes Voyages</h3>
+                <p>Mes destinations de rêve.</p>
+                <a href="voyages.html">
+                    <img src="avion_voyage.png" alt="Page Voyages" class="image-cliquable">
+                </a>
+                <br><br>
+                <a href="voyages.html" style="color:#FF69B4; font-weight:bold;">Voir la page Voyages</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

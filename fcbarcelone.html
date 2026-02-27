@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>FC Barcelone - Passion Barça</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /* Fond avec les rayures verticales Blaugrana */
+        body {
+            background: repeating-linear-gradient(
+                90deg,
+                #004d98,
+                #004d98 80px,
+                #a50044 80px,
+                #a50044 160px
+            );
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Cadre central blanc */
+        #contenu-barca {
+            background-color: rgba(255, 255, 255, 0.95);
+            width: 90%;
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.5);
+        }
+
+        /* Style des photos des joueurs */
+        .galerie-joueurs {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .carte-joueur {
+            background: white;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+            border: 2px solid #ddd;
+        }
+
+        .photo-joueur {
+            width: 280px;
+            height: 380px;
+            object-fit: cover; /* Pour que les images ne soient pas déformées */
+            border-radius: 10px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .nom-joueur {
+            font-weight: bold;
+            color: #004d98;
+            font-size: 1.2em;
+        }
+
+        /* Boutons musique */
+        .bouton-musique {
+            background-color: #a50044;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        h1 { color: #004d98; font-size: 45px; margin-top: 0; }
+    </style>
+</head>
+<body>
+
+    <div id="entete-de-page"> <p>Més que un club - FC Barcelone</p> </div>
+
+    <table id="bloc-menu">
+        <tr>
+            <th><a href="index.html">Accueil</a></th>
+            <th><a href="productions.html">Productions</a></th>
+            <th><a href="passions.html">Passions</a></th>
+            <th><a href="videos.html">Vidéos</a></th>
+            <th><a href="site.html">Mon site de rêve</a></th>
+        </tr>
+    </table>
+
+    <div id="contenu-barca">
+        <h1>VISCA BARCA Y VISCA CATALUNYA !</h1>
+
+        <div style="background: #f0f0f0; padding: 20px; border-radius: 15px; margin-bottom: 30px;">
+            <p><strong>🎵 ambiance du Camp Nou :</strong></p>
+            <audio id="hymne" loop>
+                <source src="hymne_barca.mp3" type="audio/mpeg">
+            </audio>
+            <button class="bouton-musique" onclick="document.getElementById('hymne').play()">▶ Lancer l'hymne</button>
+            <button class="bouton-musique" style="background-color: #555;" onclick="document.getElementById('hymne').pause()">⏸ Pause</button>
+        </div>
+
+        <h2 style="font-size: 1.2em; font-weight: normal; color: #333; margin-bottom: 20px;">
+    Le Barça est le club que je supporte depuis que je suis petite, je ne loupe pas un match, on les regarde en famille.
+</h2>
+
+<h3 style="color: #FF69B4; font-size: 2em; text-transform: uppercase; margin-top: 30px;">
+    Mes joueurs préférés
+</h3>
+        <div class="galerie-joueurs">
+            <div class="carte-joueur">
+                <img src="messi.jpg" alt="Lionel Messi" class="photo-joueur">
+                <div class="nom-joueur">Lionel Messi</div>
+            </div>
+
+            <div class="carte-joueur">
+                <img src="yamal.jpg" alt="Lamine Yamal" class="photo-joueur">
+                <div class="nom-joueur">Lamine Yamal</div>
+            </div>
+
+            <div class="carte-joueur">
+                <img src="lewandowski.jpg" alt="Lewandowski" class="photo-joueur">
+                <div class="nom-joueur">Robert Lewandowski</div>
+            </div>
+        </div>
+
+        <br><br>
+        <a href="site.html" style="color: #004d98; font-weight: bold; text-decoration: none;">← Retour à la page d'accueil</a>
+    </div>
+<div style="margin-top: 40px; text-align: center;">
+    
+    <div style="background-color: white; 
+                display: inline-block; 
+                padding: 10px 30px; 
+                border-radius: 50px 50px 0 0; 
+                border: 2px solid #a50044; 
+                border-bottom: none;
+                box-shadow: 0px -5px 10px rgba(0,0,0,0.1);">
+        <h2 style="color: #a50044; margin: 0; font-size: 24px; font-weight: bold;">
+            🎞️ LES BUTS LÉGENDAIRES DE MESSI
+        </h2>
+    </div>
+
+    <div style="background: white; 
+                padding: 20px; 
+                border-radius: 20px; 
+                border: 2px solid #a50044; 
+                box-shadow: 0px 10px 20px rgba(0,0,0,0.2);">
+        
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px;">
+            <iframe 
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                src="https://www.youtube.com/embed/nFg0N_JesWs" 
+                title="Messi Goals" 
+                frameborder="0" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        
+        <p style="margin-top: 15px; font-weight: bold;">
+            <a href="https://youtu.be/oN0ebV4WCRI?si=LkyA1yKJWlal1it1" target="_blank" style="color: #004d98; text-decoration: none;">
+                ⚽ Voir la vidéo sur YouTube
+            </a>
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

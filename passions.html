@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Passions - Rose</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /* Ajout de styles pour une mise en page élégante */
+        .container-passions {
+            display: flex;
+            align-items: center; /* Centre verticalement */
+            justify-content: space-between; /* Espace entre texte et image */
+            gap: 20px; /* Espace entre les deux colonnes */
+            margin-top: 20px;
+        }
+
+        .texte-passions {
+            flex: 1; /* Prend l'espace restant */
+        }
+
+        .image-passion-illustration {
+            width: 300px; /* Taille ajustable selon tes préférences */
+            border-radius: 15px; /* Arrondit les coins pour l'esthétique */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Petit effet d'ombre */
+        }
+
+        /* Responsive : met l'image au-dessus du texte sur téléphone */
+        @media (max-width: 600px) {
+            .container-passions {
+                flex-direction: column-reverse;
+            }
+            .image-passion-illustration {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="entete-de-page"> <p>Mes Passions</p> </div>
+    
+    <table id="bloc-menu">
+        <tr>
+            <th><a href="index.html">Accueil</a></th>
+            <th><a href="productions.html">Productions</a></th>
+            <th><a href="passions.html">Passions</a></th>
+            <th><a href="videos.html">Vidéos</a></th>
+            <th><a href="site.html">Mon site de rêve</a></th>
+        </tr>
+    </table>
+
+    <div id="contenu">
+        <h1>Sommaire</h1>
+        
+        <div class="container-passions">
+            <div class="texte-passions">
+                <ul>
+                    <li>Le Football</li>
+                    <li>Le Tennis</li>
+                    <li>Les Voyages</li>
+                    <li>La Musique</li>
+                    <li>Les Langues étrangères</li>
+                </ul>
+                
+                <h2>Le Sport</h2>
+                <p>Le tennis et le foot sont essentiels pour moi.</p>
+                
+                <h2>Découvertes</h2>
+                <p>J'aime la musique et apprendre de nouvelles langues.</p>
+            </div>
+
+            <div class="image-presentation">
+                <img src="mespassions.png" alt="Mes Passions" class="image-passion-illustration">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

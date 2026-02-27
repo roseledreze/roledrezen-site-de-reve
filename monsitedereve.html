@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Mon Site de Rêve</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /* Animation de fond */
+        body {
+            overflow-x: hidden;
+            background: #FFFFFF; /* Fond blanc comme demandé */
+        }
+
+        .background-animation {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 182, 193, 0.3); /* Rose pâle transparent */
+            animation: move 20s infinite linear;
+        }
+
+        @keyframes move {
+            from { transform: translateY(100vh) scale(0); opacity: 1; }
+            to { transform: translateY(-10vh) scale(1.5); opacity: 0; }
+        }
+
+        /* Mise en page des deux parties distinctes */
+        .split-container {
+            display: flex;
+            height: 60vh; /* Hauteur de la section */
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 8px 32px rgba(255, 193, 204, 0.2);
+            border: 1px solid #FFC1CC;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+            background: #FFF0F5;
+        }
+
+        .card h3 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #FF69B4;
+        }
+
+        .card p {
+            font-size: 1.2rem;
+            color: #D02090;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-animation">
+        <div class="circle" style="width:80px; height:80px; left:10%; animation-duration:15s;"></div>
+        <div class="circle" style="width:120px; height:120px; left:30%; animation-duration:25s; animation-delay:2s;"></div>
+        <div class="circle" style="width:60px; height:60px; left:70%; animation-duration:18s; animation-delay:5s;"></div>
+        <div class="circle" style="width:100px; height:100px; left:85%; animation-duration:22s; animation-delay:1s;"></div>
+    </div>
+
+    <div id="entete-de-page"> <p>Mon Site de Rêve</p> </div>
+    
+    <table id="bloc-menu">
+        <tr>
+            <th><a href="index.html">Accueil</a></th>
+            <th><a href="productions.html">Productions</a></th>
+            <th><a href="passions.html">Passions</a></th>
+            <th><a href="videos.html">Vidéos</a></th>
+            <th><a href="site.html">Mon site de rêve</a></th>
+        </tr>
+    </table>
+
+    <div id="contenu">
+        <h1 style="text-align: center;">Bienvenue sur mon projet</h1>
+        
+        <div class="split-container">
+            <a href="fcbarcelone.html" class="card">
+                <h3>FC Barcelone</h3>
+                <p>Mon club de cœur</p>
+                <span style="margin-top:20px; font-weight:bold; color:#FF69B4;">Découvrir →</span>
+            </a>
+
+            <a href="voyages.html" class="card">
+                <h3>Voyages</h3>
+                <p>Mes destinations rêvées</p>
+                <span style="margin-top:20px; font-weight:bold; color:#FF69B4;">Découvrir →</span>
+            </a>
+        </div>
+    </div>
+
+    <div id="pied-de-page">© 2024 - Mon Site de Rêve</div>
+</body>
+</html>
